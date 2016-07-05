@@ -1,0 +1,140 @@
+.project {
+	font-family: 'Lato-Regular';
+	.project--title {
+		font-size: 1.5rem;
+		font-family: 'Lato-Bold';
+		padding: 20px 0;
+		@media @tabletformat {
+			text-align: center;
+		}
+	}
+	ul {
+		font-size: 0px;
+	}
+	.project--items {
+		@media @tabletformat {
+			display: inline-block;
+			width: 50%;
+		}
+		@media @desktopformat {
+			display: inline-block;
+			width: 16.66666%;
+		}
+		[class^=project--object] {
+			min-height: 150px;
+
+		}
+
+		img {
+			width: 50px;
+		}
+		a {
+			min-height: 150px;
+    		display: flex;
+    		flex-flow: row wrap;
+    		align-items: center;
+    		justify-content: center;
+    		@media @desktopformat {
+				min-height: 250px;
+			}
+		}
+		.project--object1 {
+			background: url('../image/imgmin/engie-1.png') no-repeat center;
+			background-size: 100% auto;
+			@media @desktopformat {
+				background-size: 230%;
+
+			}
+			&:hover {
+				@media @desktopformat {
+					transform: scale(1.05);
+					transition: 0.5s ease-out;
+				}
+			}
+			a {
+				background-color:  rgba(0, 170, 255, 0.3);
+			}
+		}
+		.project--object2 {
+			background: url('../image/imgmin/renault1.png') no-repeat center;
+			background-size: 100% auto;
+			@media @desktopformat {
+				background-size: 230%;
+			}
+			&:hover {
+				@media @desktopformat {
+					transform: scale(1.05);
+					transition: 0.5s ease;
+				}
+			}			
+			a {
+				background-color:  rgba(255, 205, 0, 0.3);
+			}
+		}
+		.project--object3 {
+			background: url('../image/imgmin/fnac1.png') no-repeat center;
+			background-size: 100% auto;
+			@media @desktopformat {
+				background-size: 230%;
+			}
+			&:hover {
+				@media @desktopformat {
+					transform: scale(1.05);
+					transition: 0.5s ease;
+				}
+			}			
+			a {
+				background-color:  rgba(0, 128, 0, 0.3);
+			}
+			
+		}
+		.project--object4 {
+			background: url('../image/imgmin/gopro1.png') no-repeat center;
+			background-size: 100% auto;
+			@media @desktopformat {
+				background-size: 230%;
+			}
+			&:hover {
+				@media @desktopformat {
+					transform: scale(1.05);
+					transition: 0.5s ease;
+				}
+			}			
+			a {
+				background-color:  rgba(227, 168, 32, 0.3);
+			}
+		}
+		.project--object5 {
+			background:  url('../image/imgmin/nescafe1.png') no-repeat center;
+			background-size: 100% auto;
+			@media @desktopformat {
+				background-size: 230%;
+			}
+			&:hover {
+				@media @desktopformat {
+					transform: scale(1.05);
+					transition: 0.5s ease;
+				}
+			}			
+			a {
+				background-color:  rgba(226, 5, 18, 0.3);
+			}
+		}
+		.project--object6 {
+			background: url('../image/imgmin/tf11.png') no-repeat center;
+			background-size: 100% auto;
+			@media @desktopformat {
+				background-size: 230%;
+			}
+			&:hover {
+				@media @desktopformat {
+					transform: scale(1.05);
+					transition: 0.5s ease;
+				}
+			}			
+			a {
+				background-color:  rgba(0, 0, 126, 0.3);
+			}
+		}
+	}
+}

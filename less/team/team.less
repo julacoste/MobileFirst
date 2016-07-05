@@ -1,0 +1,58 @@
+.team {
+	background-color: @white;
+	color: @black;
+	font-family: 'Lato-Regular';
+	padding: 10px 0;
+	.team--title {
+		font-size: 1.5rem;
+		font-family: 'Lato-Bold';
+		padding: 20px 0;
+		@media @tabletformat {
+			text-align: center;
+		}
+	}
+	hr {
+		border-color: @black;
+	}
+	.team--listitems {
+		@media @tabletformat {
+			text-align: center;
+		}
+		.team--items{
+			@media @tabletformat {
+				display: inline-block;
+				padding: 25px 40px;
+				text-align: center;
+				width: 250px;
+			}
+			&:first-child, &:nth-child(3) {
+				@media @tabletformat {
+					margin-left: 15%;
+				}
+				@media @desktopformat {
+					margin: 0;
+				}
+			}
+			&:nth-child(2), &:nth-child(4) {
+				@media @tabletformat {
+					margin-right: 15%;
+				}
+				@media @desktopformat {
+					margin: 0;
+				}
+			}
+			figure img {
+				border: @portrait;
+				border-radius: 100px;
+			}
+			figcaption {
+				font-family: 'Lato-Bold';
+				padding-top: 10px;
+				}
+			p.team--items_description {
+				font-style: italic;
+				padding: 3px 0 20px 0;
+			}
+		}
+	}
+}

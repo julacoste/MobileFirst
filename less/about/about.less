@@ -1,0 +1,76 @@
+.about {
+	font-family: 'Lato-Regular';
+	padding: 10px 0;
+	@media @tabletformat {
+		text-align: center;
+		}
+	.about--title {
+		font-size: 1.5rem;
+		padding: 20px 0;
+	}
+	.about--items {
+		padding: 0 20px;
+		[class^=about--items] {
+			@media @desktopformat {
+				flex: 1;
+				padding-right: 42px;
+			}
+		}
+		@media @desktopformat {
+			display: flex;
+			flex-direction: row;
+			align-items: stretch;
+			margin: 55px 0;
+			padding: initial;
+		}
+		.about--items1 {
+			@media @desktopformat {
+				background: url('../image/imgmin/contour-items.png') no-repeat center right;
+			}
+			span {
+				background: url('../image/imgmin/design-mobile.png') no-repeat;
+				display: inline-block;
+				height: 51px;
+				width: 40px;
+			}
+		}
+		.about--items2 {
+			@media @desktopformat {
+				background: url('../image/imgmin/contour-items.png') no-repeat center right;
+			}
+			span {
+				background: url('../image/imgmin/dev-mobile.png') no-repeat;
+				display: inline-block;
+				height: 46px;
+				width: 50px;
+			}
+		}
+		.about--items3 {
+			span {
+				background: url('../image/imgmin/setting-mobile.png') no-repeat;
+				display: inline-block;
+				height: 45px;
+				width: 45px;
+			}
+		}
+		.about--items1, .about--items2, .about--items3 {
+			h3 {
+				font-size: 1.1rem;
+				padding: 25px 0 15px 0;
+			}
+			p.about--items_description {
+				font-size: 0.9rem;
+				font-style: italic;
+				font-family: 'Lato-Light';
+				line-height: 1.2;
+				padding-bottom: 35px;
+				@media @tabletformat {
+					padding: 20px 150px;
+				}
+				@media @desktopformat {
+					padding: 20px 50px;
+				}
+			}
+		}
+	}
+}
